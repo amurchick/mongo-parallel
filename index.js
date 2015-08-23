@@ -11,7 +11,6 @@ co(function* () {
 
 	const url = 'mongodb://localhost/test?w=1&journal=false';
 	const col = 'test';
-	const indexFields = [{hash: 1, ts: 1}, {expires: 1}];
 
 	var db = yield mongodb.MongoClient.connect(url, {promiseLibrary: rsvp.Promise});
 	yield db.dropCollection(col);
@@ -41,7 +40,7 @@ co(function* () {
 
 	yield promises;
 
-	var docs = yield test.find({}, {count: 1, _id: 0}).toArray();
+	var docs = yield test.find({}, {_id: 0}).toArray();
 	console.log(docs);
 
 	process.exit();
