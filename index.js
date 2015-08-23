@@ -20,8 +20,7 @@ co(function* () {
 	test.createIndex({expires: 1}, {expireAfterSeconds: 0});
 
 	var hash = '123';
-	var now = Date.now();
-	var ts = Math.trunc(now/1000);
+	var ts = Math.trunc(Date.now()/1000);
 
 	var promises = new Array(20)
 		.join(',')
@@ -31,7 +30,7 @@ co(function* () {
 			return test.findOneAndUpdate(
 				{hash: hash, ts: ts},
 				{
-					$set: {expires: new Date(now + 60 * 1000)},
+					$set: {expires: new Date(Date.now() + 60 * 1000)},
 					$inc: {count: 1}
 				},
 				{upsert: true}
