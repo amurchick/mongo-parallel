@@ -1,0 +1,79 @@
+{
+  "name": "mongo-parallel",
+  "version": "1.0.0",
+  "dependencies": {
+    "co": {
+      "version": "4.6.0",
+      "from": "co@*",
+      "resolved": "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
+    },
+    "mongodb": {
+      "version": "2.0.42",
+      "from": "mongodb@*",
+      "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-2.0.42.tgz",
+      "dependencies": {
+        "mongodb-core": {
+          "version": "1.2.10",
+          "from": "mongodb-core@1.2.10",
+          "resolved": "https://registry.npmjs.org/mongodb-core/-/mongodb-core-1.2.10.tgz",
+          "dependencies": {
+            "bson": {
+              "version": "0.4.11",
+              "from": "bson@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/bson/-/bson-0.4.11.tgz"
+            },
+            "kerberos": {
+              "version": "0.0.12",
+              "from": "kerberos@>=0.0.0 <0.1.0",
+              "resolved": "https://registry.npmjs.org/kerberos/-/kerberos-0.0.12.tgz",
+              "dependencies": {
+                "nan": {
+                  "version": "1.8.4",
+                  "from": "nan@>=1.8.0 <1.9.0",
+                  "resolved": "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz"
+                }
+              }
+            }
+          }
+        },
+        "readable-stream": {
+          "version": "1.0.31",
+          "from": "readable-stream@1.0.31",
+          "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz",
+          "dependencies": {
+            "core-util-is": {
+              "version": "1.0.1",
+              "from": "core-util-is@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+            },
+            "isarray": {
+              "version": "0.0.1",
+              "from": "isarray@0.0.1",
+              "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
+            },
+            "string_decoder": {
+              "version": "0.10.31",
+              "from": "string_decoder@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@>=2.0.1 <2.1.0",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            }
+          }
+        },
+        "es6-promise": {
+          "version": "2.1.1",
+          "from": "es6-promise@2.1.1",
+          "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-2.1.1.tgz"
+        }
+      }
+    },
+    "rsvp": {
+      "version": "3.0.21",
+      "from": "rsvp@*",
+      "resolved": "https://registry.npmjs.org/rsvp/-/rsvp-3.0.21.tgz"
+    }
+  }
+}
