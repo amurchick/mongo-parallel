@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-mongod --config mongod.conf
+mongod --config mongod.conf &
