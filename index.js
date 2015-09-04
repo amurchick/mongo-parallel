@@ -9,7 +9,7 @@ var rsvp = require('rsvp');
 
 co(function* () {
 
-	const url = 'mongodb://localhost/test?w=1&journal=false';
+	const url = 'mongodb://s/test?w=1&journal=false&maxPoolSize=10';
 	const col = 'test';
 
 	console.log('Connecting');
@@ -20,7 +20,7 @@ co(function* () {
 	var test = yield db.createCollection(col);
 
 	console.log('Make indexes');
-	test.createIndex({hash: 1, ts: 1});
+	test.createIndex({hash: 1, ts: 1}, {unique: true});
 	test.createIndex({hash: 1, count: 1});
 	test.createIndex({expires: 1}, {expireAfterSeconds: 0});
 
